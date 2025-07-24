@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradeep - UI/UX Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            text-align: center;
+            max-width: 600px;
+            margin: 2rem;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+
+        .title {
+            font-size: 1.3rem;
+            color: #667eea;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .description {
+            font-size: 1.1rem;
+            color: #4a5568;
+            margin-bottom: 2.5rem;
+            line-height: 1.8;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-link {
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .skills {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .skills h3 {
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+
+        .skill-tags {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .skill-tag {
+            background: #f7fafc;
+            color: #667eea;
+            padding: 0.5rem 1rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 2rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-image">P</div>
+        <h1>Pradeep</h1>
+        <p class="title">UI/UX Developer</p>
+        <p class="description">
+            Hi! I'm Pradeep, a passionate UI/UX developer dedicated to creating beautiful, 
+            intuitive, and user-centered digital experiences. I love turning complex problems 
+            into simple, elegant solutions.
+        </p>
+        
+        <div class="nav-links">
+            <a href="/about" class="nav-link">About Me</a>
+            <a href="#contact" class="nav-link">Get In Touch</a>
+        </div>
+
+        <div class="skills">
+            <h3>What I Do</h3>
+            <div class="skill-tags">
+                <span class="skill-tag">User Interface Design</span>
+                <span class="skill-tag">User Experience</span>
+                <span class="skill-tag">Prototyping</span>
+                <span class="skill-tag">Wireframing</span>
+                <span class="skill-tag">User Research</span>
+                <span class="skill-tag">Design Systems</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
