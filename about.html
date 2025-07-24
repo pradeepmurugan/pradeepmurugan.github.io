@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Pradeep - UI/UX Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 0;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            padding: 3rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            margin: 0 auto 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: white;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+
+        .title {
+            font-size: 1.3rem;
+            color: #667eea;
+            margin-bottom: 2rem;
+            font-weight: 500;
+        }
+
+        .nav-back {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .nav-link {
+            padding: 0.8rem 1.5rem;
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            display: inline-block;
+        }
+
+        .nav-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .content-section {
+            margin-bottom: 3rem;
+        }
+
+        .content-section h2 {
+            color: #2d3748;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        .content-section p {
+            font-size: 1.1rem;
+            color: #4a5568;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .skill-category {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .skill-category h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .skill-list {
+            list-style: none;
+        }
+
+        .skill-list li {
+            padding: 0.3rem 0;
+            color: #4a5568;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .skill-list li::before {
+            content: "•";
+            color: #667eea;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .experience-item {
+            background: #f7fafc;
+            padding: 1.5rem;
+            border-radius: 15px;
+            margin-bottom: 1rem;
+            border-left: 4px solid #667eea;
+        }
+
+        .experience-item h3 {
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item .duration {
+            color: #667eea;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item p {
+            color: #4a5568;
+            margin-bottom: 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 2rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="profile-image">P</div>
+            <h1>About Pradeep</h1>
+            <p class="title">UI/UX Developer</p>
+        </div>
+
+        <div class="nav-back">
+            <a href="/" class="nav-link">← Back to Home</a>
+        </div>
+
+        <div class="content-section">
+            <h2>Who I Am</h2>
+            <p>
+                My name is Pradeep and I am a passionate UI/UX developer with a deep love for creating 
+                user-centered digital experiences. I believe that great design is not just about making 
+                things look beautiful, but about solving real problems and making technology accessible 
+                to everyone.
+            </p>
+            <p>
+                With a background in both design and development, I bridge the gap between aesthetics 
+                and functionality. I'm constantly learning and staying updated with the latest design 
+                trends and technologies to deliver cutting-edge solutions.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Design</h3>
+                    <ul class="skill-list">
+                        <li>User Interface Design</li>
+                        <li>User Experience Design</li>
+                        <li>Wireframing & Prototyping</li>
+                        <li>Design Systems</li>
+                        <li>Visual Design</li>
+                        <li>Information Architecture</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Research</h3>
+                    <ul class="skill-list">
+                        <li>User Research</li>
+                        <li>Usability Testing</li>
+                        <li>User Interviews</li>
+                        <li>Persona Development</li>
+                        <li>Journey Mapping</li>
+                        <li>Analytics & Insights</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <ul class="skill-list">
+                        <li>Figma</li>
+                        <li>Sketch</li>
+                        <li>Adobe Creative Suite</li>
+                        <li>InVision</li>
+                        <li>Principle</li>
+                        <li>Framer</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>My Approach</h2>
+            <p>
+                I follow a human-centered design approach, starting with understanding the users' 
+                needs and pain points. Every project begins with research and discovery, followed 
+                by ideation, prototyping, and iterative testing. I believe in creating designs that 
+                are not only visually appealing but also functional, accessible, and delightful to use.
+            </p>
+            <p>
+                Collaboration is key to my process. I work closely with stakeholders, developers, 
+                and other team members to ensure that the final product meets both business goals 
+                and user needs. I'm always open to feedback and believe that the best solutions 
+                come from diverse perspectives and continuous iteration.
+            </p>
+        </div>
+
+        <div class="content-section">
+            <h2>What I'm Passionate About</h2>
+            <div class="experience-item">
+                <h3>Creating Inclusive Design</h3>
+                <p>I believe that great design should be accessible to everyone, regardless of their abilities or background.</p>
+            </div>
+            <div class="experience-item">
+                <h3>User-Centered Solutions</h3>
+                <p>Every design decision I make is backed by user research and testing to ensure it truly serves the users' needs.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Continuous Learning</h3>
+                <p>I'm always exploring new tools, techniques, and trends to stay at the forefront of UI/UX design.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
